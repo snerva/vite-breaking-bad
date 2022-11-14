@@ -40,8 +40,11 @@ export default {
         <option selected>Select category</option>
       </select>
 
-      <div class="characters text-center p-5 my-5">
-        <div class="row row-cols-5  g-3">
+      <div class="characters p-4 my-5">
+        <div class="characters_numbers">
+          <p class="p-3">Found 62 characters</p>
+        </div>
+        <div class="row row-cols-5 p-3  g-3 text-center">
           <div class="col" v-for="character in characters">
             <div class="character p-3">
               <img :src="character.img" :alt="character.name" class="img-fluid">
