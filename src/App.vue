@@ -40,14 +40,14 @@ export default {
         <option selected>Select category</option>
       </select>
 
-      <div class="characters">
-        <div class="row row-cols-5">
-          <div class="col p-3" v-for="character in characters">
-            <div class="character">
+      <div class="characters text-center p-5 my-5">
+        <div class="row row-cols-5  g-3">
+          <div class="col" v-for="character in characters">
+            <div class="character p-3">
               <img :src="character.img" :alt="character.name" class="img-fluid">
-              <h4>{{ character.name }}</h4>
+              <h6 class="p-3">{{ character.name }}</h6>
               <div class="category">{{ character.category }}</div>
-              <div class="status">{{ character.status }}</div>
+              <small class="status">{{ character.status }}</small>
             </div>
           </div>
         </div>
