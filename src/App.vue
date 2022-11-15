@@ -17,8 +17,11 @@ export default {
   methods: {
     changeCategory() {
       //console.log('click');
-    },
-    callApi(url) {
+      console.log(this.store.cat);
+      let categorySelected = this.store.cat
+      const url = `${this.store.API_URL}?category=${categorySelected}`
+      console.log(url);
+
       axios.get(url)
         .then(response => {
           console.log(response);
