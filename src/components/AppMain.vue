@@ -11,6 +11,8 @@ export default {
         <div class="container">
             <select class="form-select">
                 <option selected>Select category</option>
+                <option value="">Breaking Bad</option>
+                <option value="">Better Call Saul</option>
             </select>
 
             <CharactersList></CharactersList>
