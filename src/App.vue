@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     changeCategory() {
-      console.log('sto cercando');
+      //console.log('click');
     },
     callApi(url) {
       axios.get(url)
