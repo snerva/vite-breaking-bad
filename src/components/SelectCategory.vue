@@ -4,17 +4,20 @@ export default {
     name: 'SelectCategory',
     data() {
         return {
-            store
+            store,
+            options: [
+                { text: 'Breaking Bad', value: 'breaking' },
+                { text: 'Better Call Saul', value: 'better' }
+            ]
         }
     }
 }
 </script>
 
 <template>
-    <select class="form-select" v-model="categorySelect" @change="changeCategory">
+    <select class="form-select" @change="changeCategory">
         <option value="">Select category</option>
-        <option value="breaking">Breaking Bad</option>
-        <option value="better">Better Call Saul</option>
+        <option v-for="option in options" :value="option.value">{{ option.text }}</option>
     </select>
 </template>
 
