@@ -1,19 +1,19 @@
 <script>
-import CharactersList from './CharactersList.vue'
+import CharactersList from './CharactersList.vue';
+import SelectCategory from './SelectCategory.vue';
 export default {
     name: "AppMain",
-    components: { CharactersList },
+    components: {
+        CharactersList,
+        SelectCategory
+    },
 }
 </script>
 
 <template>
     <main>
         <div class="container">
-            <select class="form-select">
-                <option selected>Select category</option>
-                <option value="">Breaking Bad</option>
-                <option value="">Better Call Saul</option>
-            </select>
+            <SelectCategory></SelectCategory>
 
             <CharactersList></CharactersList>
         </div>
