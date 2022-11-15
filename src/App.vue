@@ -1,11 +1,13 @@
 <script>
 import axios from 'axios'
 import AppMain from './components/AppMain.vue'
+import SelectCategory from './components/SelectCategory.vue';
 import { store } from './store'
 export default {
   name: 'App',
   components: {
     AppMain,
+    SelectCategory
   },
   data() {
     return {
@@ -34,8 +36,10 @@ export default {
 <template>
   <header>
     <h1 class="m-3">Breaking Bad Api</h1>
+    <div class="container">
+      <SelectCategory></SelectCategory>
+    </div>
   </header>
-
   <AppMain></AppMain>
 
 </template>

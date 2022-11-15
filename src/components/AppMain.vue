@@ -1,11 +1,9 @@
 <script>
 import CharactersList from './CharactersList.vue';
-import SelectCategory from './SelectCategory.vue';
 export default {
     name: "AppMain",
     components: {
-        CharactersList,
-        SelectCategory
+        CharactersList
     },
 }
 </script>
@@ -13,8 +11,6 @@ export default {
 <template>
     <main>
         <div class="container">
-            <SelectCategory></SelectCategory>
-
             <CharactersList></CharactersList>
         </div>
     </main>
