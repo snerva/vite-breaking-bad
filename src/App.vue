@@ -15,6 +15,9 @@ export default {
     }
   },
   methods: {
+    changeCategory() {
+      console.log('sto cercando');
+    },
     callApi(url) {
       axios.get(url)
         .then(response => {
@@ -37,7 +40,7 @@ export default {
   <header>
     <h1 class="m-3">Breaking Bad Api</h1>
     <div class="container">
-      <SelectCategory></SelectCategory>
+      <SelectCategory @selectData="changeCategory"></SelectCategory>
     </div>
   </header>
   <AppMain></AppMain>
