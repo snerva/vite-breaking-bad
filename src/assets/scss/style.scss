@@ -5,7 +5,7 @@ body {
     color: white;
 }
 
-header {
+main {
     .container {
         width: 80%;
         margin: 2rem auto;
@@ -13,13 +13,6 @@ header {
         select {
             width: 13%;
         }
-    }
-}
-
-main {
-    .container {
-        width: 80%;
-        margin: 2rem auto;
 
         .characters {
             background-color: white;

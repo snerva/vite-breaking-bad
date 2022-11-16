@@ -7,6 +7,7 @@ export const store = reactive({
     characters: null,
     info: null,
     error: null,
+    loading: true,
     cat: '',
     options: [
         { text: 'Breaking Bad', value: 'Breaking' },
